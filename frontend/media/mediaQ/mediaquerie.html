@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+          
+
+        font-size:16px;
+        background-color: purple;
+    }
+    @media (orientation: portrait){
+        body{
+            font-size:18px;
+            background-color:cyan;
+        }
+
+    }
+    @media(orientation:landscape){
+        body{
+            font-size:20px;
+            background-color:lavender;
+        }
+
+    }
+    .styled-button:hover{
+        background-color:green;
+    
+    }
+    .styled-button:focus {
+        background-color: plum;
+
+    }
+    .styled-button:active{
+        background-color: red;
+    }
+    .vyshu::before{
+        content:'*';
+        color: goldenrod;
+    }
+    .vyshu::after{
+        content: "*";
+        color: goldenrod;
+    }
+    .vyshu::selection{
+        background-color: lightgreen;
+    }
+    .vyshu::first-letter{
+        color: darkmagenta;
+    }
+    .vyshu::first-line{
+        color: palevioletred;
+    }
+    pinky{
+        font-size: 16px;
+        
+    }
+    .pinky:nth-child(even) {
+        background-color: rgb(190, 151, 227);
+    }
+    .pinky:nth-child(3n){
+        background-color: rgb(120, 120, 229);
+    }
+    
+    </style>
+  
+</head>
+<body>
+    <h1 class="vyshu">MEDIA QRERIES </h1>
+    <p>Example for the media qeries</p>
+    <button class="styled-button">submit</button>
+    <ul>
+        <li class="pinky">one</li>
+        <li class="pinky">two</li>
+        <li class="pinky">three</li>
+        <li class="pinky">four</li>
+        <li class="pinky">five</li>
+        <li class="pinky">six</li>
+    </ul>
+</body>
+</html>
